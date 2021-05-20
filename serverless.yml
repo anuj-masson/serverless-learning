@@ -1,0 +1,14 @@
+service: serverless-learning
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: python2.7
+  lambdaHashingVersion: 20201221
+  stage: dev
+  region: ap-south-1
+
+functions:
+  hello:
+    handler: handler.hello
